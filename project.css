@@ -1,0 +1,782 @@
+/*
+    Website project phase 9
+    Web Development & Design Foundations with HTML5
+    Felke-Morris 9th Edition
+
+    Author: Sami Samara
+    Date:   12/9/2019
+	Edited using Brackets
+
+    Filename: project.css
+   */
+
+/* creates fonts used in website */
+@font-face {
+font-family: arial;
+}
+
+/* creates a space for content to exist on */
+main {
+    display: block;
+}
+
+/* adjusts header to be aligned perfectly with an image to the left */
+h1 {
+    font-family: "Times New Roman";
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: center;
+    color: black;
+    padding-left: 150px;
+    padding-top: 30px;
+    margin-bottom: auto;
+    font-size: 60px;
+    margin-top: auto;
+    margin-left: 60px;
+}
+
+/* creates format of navigation in all pages. nav a loses the underlines for each link as well as adjusts user interactivity, and nav li turns links into block elements */
+nav {
+    font-weight: bold;
+    word-spacing: 1.5em;
+    font-size: 1.5em;
+    padding-top: 3em;
+    padding-bottom: 0px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li {display: inline-block;}
+
+nav a:link { color: red; }
+nav a:visited { color: dodgerblue; }
+nav a:hover { color: #e6e600; }
+
+nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+/* makes h2 format */
+h2 {
+    font-family: "Bogeda Sans Light";
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2.5em;
+    color: black;
+}
+
+/* creates header format */
+header {
+    height: 100px;
+    background-image: url(images/smash-ball-black.png);
+    margin-left: 1.75em;
+    margin-top: 1.75em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 200px;
+    padding-bottom: 100px;
+    margin-bottom: auto;
+}
+
+/* background image for header */
+.smashballblack { background-image: url(images/smash-ball-black.png);
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+/* text element */
+p {
+    color: black;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/* image element in index.html */
+.banner { 
+    background-image: url(banner.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 200px;
+}
+
+/* Creates the background image of the entire website. Any part of the page not taken up by content is displaying part of this image. */
+body {
+    background-image: url(background.jpg);
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* format for image in character.html */
+.character {
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 20px;
+    background-size: 100% 100%;
+}
+
+/* fixes text alignment */
+.textbox { 
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.8em;
+}
+
+/* creates tiny text for "dark samus" description */
+.textbox2 { 
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.5em;
+}
+
+/* float and clear creates format for text to appear on the side of the image as well as break off part of the bottom border for a stylistic choice */
+.floatleft { float: left;}
+
+.clearleft {clear: left;
+    padding-right: 1em;
+}
+
+/* creates image element in item.html */
+.item {
+    background-size: auto;
+    height: 150px;
+    padding-left: 0px;
+    margin-right: -50px;
+    margin-left: 0;
+}
+
+/* This header is part of the format for the character.html page. This allows the name of each character to be displayed while seperating them all too. */
+h4 { font-size: 1.7em;
+	padding-left: 2em;
+    padding-right: 0;
+	padding-bottom: 0;
+    text-transform: capitalize;
+    border-bottom: 2px solid #000;
+}
+
+/* This is a dummy header. It displays invisible text specifcally to display a border on the bottom of the last fighter without causing trouble. */
+h6 { font-size: 1.7em;
+	padding-left: 2em;
+    padding-right: 0;
+	padding-bottom: 0;
+    text-transform: capitalize;
+    border-bottom: 2px solid #000;
+    color: #efefef;
+}
+
+/* creates footer element */
+footer {
+    font-style: italic;
+    font-size: .60em;
+    text-align: center;
+    color: black;
+    background-color: #EFEFEF;
+    clear: left;
+}
+
+/* element that allows sides of the screen in the website to be left blank so the background can be displayed */
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #EFEFEF;
+}
+
+/* displayed image used before a website was worked on yet */
+#construction { background-image: url(construction.jpg);
+    background-size: 100% 100%;
+        height: 150px;
+}
+
+/* element used to define structure of the web pages on desktop and not on any other device */
+#mobile { display: none; }
+#desktop {display: inline; }
+
+/* table in items.html */
+table { margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    border: 4px solid black;
+    border-spacing: 0;
+    background-color: #fae630;
+    font-size: 1.5em;
+}
+
+/* configures table settings as well as have the color of each part change */
+td, th { padding: 5px;
+    padding-right: 10px;
+}
+tr:nth-of-type(odd) {background-color: #e9d72b;
+font-size: 1em;}
+
+/* table in howToPlay.html */
+.table { margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    border: 4px solid black;
+    border-spacing: 0;
+    background-color: #4d88ff;
+    font-size: 1.5em;
+}
+/* configures table format */
+.td { padding: 10px;}
+
+.th { padding: 10px;
+    padding-right: 50px;
+    padding-left: 40px;
+}
+
+.tr:nth-of-type(odd) {background-color: #6699ff;
+font-size: 1em;}
+
+/* table in modes.html */
+.table2 { margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    border: 4px solid black;
+    border-spacing: 0;
+    background-color: #009933;
+    font-size: 1.5em;
+}
+
+.td2, .th2 { padding: 10px;}
+.tr2:nth-of-type(odd) {background-color: #00b33c;
+font-size: 1em;
+}
+
+.th2 { align-content: center;}
+
+/* .mode1 and .mode2 are the same image elements, however they float in opposite directions. This allows the table format to switch over and over fluidly. */
+.mode1 { 
+    background-size: auto;
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+
+.mode2 { 
+    background-size: auto;
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+/* creates area the form takes up */
+form { width: 300px;}
+    
+/* alters form format and sections */
+input, textarea {
+        margin: 5px;
+        margin-left: 25px;
+        margin-bottom: 2px;
+        padding-left: 5px;
+    }
+    
+    textarea {
+        resize: none;
+    }
+
+button {
+    margin-left: 25px;
+}
+
+/* header specifcally for contact.html */
+.contact_header {
+    border-bottom: 3px solid black;
+}
+
+/* adjusts needed parameters for text in contact.html */
+h5 { margin-left: 25px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+/* creates space the video element takes up */
+.videowrapper { 
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0px;
+}
+
+/* forces space in videowrapper box to be taken up by video*/
+.videowrapper iframe { 
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/* centers video */
+iframe { 
+    width: 100%;
+    height: auto;
+}
+
+/* creates format of each image */
+.gallery {
+  margin: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 150px;
+  clear: right;
+  margin-left: 15px;
+}
+
+/* highlights image when a user hovers over it */
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: auto;
+  height: 85px;
+  margin-bottom: auto;
+}
+
+/* format for text underneath image in stages3.html */
+.desc {
+  padding-bottom: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  text-align: center;
+  margin-bottom: auto;
+  text-transform: capitalize;
+  height: 23px;
+}
+
+/* configures image in shopping.html */
+.box {
+    background-size: 100% 100%;
+    height: 200px;
+    width: auto;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+/* text element for shopping.html, it differs from the <p> element */
+.p2 {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+/* adjusts image position in shopping.html */
+.float {
+    float: left;
+    margin: 10px;
+}
+
+/* div container for shopping page */
+.shopping { 
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+    background-color: #ffffff;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px #666666;
+}
+
+/* new display for non-desktop devices with a minimum max width of 1024 pixels */
+@media only screen and ( max-width: 1024px ) {
+    body { margin: 0;
+    background-image: url(background.jpg) ;
+    }
+    
+    /* changes properties for "tablet mode" */
+    h4 { font-size: 1.7em;
+	padding-left: 2em;
+    padding-right: 0;
+	padding-bottom: 0;
+    text-transform: capitalize;
+    border-bottom: 2px solid #000;
+}
+    
+/* changes image width */
+.banner { 
+    background-image: url(banner.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: auto;
+}
+    
+/* new screen width. This eliminates background image exposure on the sides for better layout on smaller screen */
+#wrapper { width: auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    }
+    
+/* new header display for tablet mode */
+header { border-bottom: 5px solid black;
+         margin-top: auto;
+         padding-bottom: 7em;
+         margin-bottom: auto;
+    }
+    
+/* alteration */
+h1 { margin-top: 0;
+        margin-bottom: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+        font-size: 3em;
+        margin-left: 50px;
+    }
+
+/* new nav format */
+nav { float: none;
+    width: auto;
+    padding-top: 0px;
+    margin: 10px;
+    font-size: 1.3em;
+    border-bottom: 2px solid black;
+    margin-right: 0;
+    margin-left: 0;
+    }
+    
+nav li { display: inline-block; }
+    
+nav a {
+        width: 3em;
+        font-weight: bold;
+        border-style: none;
+    }
+    
+nav ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+/* form width change */
+form {
+    width: 300px;
+}
+    
+textarea {
+    resize: none;
+}
+    
+.email {
+        padding-left: 10px;
+    }
+    
+/* .mode1 and .mode2 image size changes */
+.mode1 { 
+    background-size: auto;
+    height: 160px;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+
+.mode2 { 
+    background-size: auto;
+    height: 160px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+    
+/* table alteration */
+.table2 { margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    border: 4px solid black;
+    border-spacing: 0;
+    background-color: #009933;
+    background-size: 20%;
+    font-size: 1.5em;
+    background-position: right;
+}
+    
+/* screen width change */
+main { margin: 0; font-size: 90%; }
+}
+
+/* new webpage format for mobile devices */
+@media only screen and (max-width: 768px) {
+    
+/* new header format */
+header { background-image: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    border-bottom: none;
+    }
+    
+/* new text format */
+h1 {
+        font-size: 2em;
+        text-align: center;
+        padding-left: 0;
+        margin-left: 0;
+        margin-bottom: auto; 
+    }
+    
+/* makes nav for mobile */
+nav { margin: 0; margin-top: auto; border-bottom: none;}
+    
+nav a {
+        display: block;
+        padding: 0.2em;
+        width: auto;
+        border-bottom: 3px solid red;
+        background-color: black;
+    }
+    
+nav li {
+        display: block;
+    }
+    
+main {
+        padding-top: 1px;
+    }
+    
+/* changes banner width */
+.banner { 
+    background-image: url(banner.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 130px;
+}
+
+/* changes character image to be centered */
+.character {
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 20px;
+    background-size: 100% 100%;
+    display: block;
+    margin: auto;
+}
+    
+/* text element alteration */
+.textbox { 
+    text-align: center;
+    clear: left;
+}
+
+.floatleft { float: none;
+    text-align: center;
+            
+}
+    
+/* fixes image format on table */
+.item { margin-right: -30px;
+    height: 70px;
+    }
+    
+.clearleft {clear: left;
+    padding-right: 1em;
+}
+    
+.mode1 { 
+    background-size: auto;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+
+.mode2 { 
+    background-size: auto;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+    
+/* alters table element to fit screen */
+.table2 { margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    border: 4px solid black;
+    border-spacing: 0;
+    background-color: #009933;
+    font-size: 1em;
+}
+
+.td2, .th2 { padding: 10px;}
+.tr2:nth-of-type(odd) {background-color: #55b33c;
+font-size: 1em;
+}
+
+h2 {
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+        border-bottom: 2px solid black;
+    }
+    
+details {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+/* alters stages.html content to fit better */
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 150px;
+  clear: right;
+  margin-left: 9px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: auto;
+  height: 85px;
+  margin-bottom: auto;
+}
+
+.desc {
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  text-align: center;
+  margin-bottom: auto;
+  text-transform: capitalize;
+  height: 23px;
+}
+
+/* display for mobile */
+#mobile { display: inline; }
+    #desktop { display: none; }
+}
+
+/* new media query made specifcally to fix elements for extra tiny screens */
+@media only screen and (max-width: 450px) {
+
+/* adds padding to the bottom to prevent overflow */
+header { background-image: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 30px;
+    padding-bottom: 0;
+    border-bottom: none;
+    }
+    
+/* alters text padding to better fit screens */
+.p2 {
+    margin-top: 20px;
+    padding: 5px;
+    clear: left;
+    text-align: center;
+}
+    
+/* alters image size */
+.box {
+    background-size: 100% 100%;
+    height: 170px;
+    width: auto;
+    padding: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+    
+/* alters image size */
+.banner { 
+    background-image: url(banner.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 70px;
+}
+    
+/* configuration for smaller mobile */
+.gallery {
+  margin: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 150px;
+  clear: right;
+  margin-left: 15px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: auto;
+  height: 85px;
+  margin-bottom: auto;
+}
+
+.desc {
+  padding-bottom: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  text-align: center;
+  margin-bottom: auto;
+  text-transform: capitalize;
+  height: 23px;
+}
+    
+.table2 { margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    border: 4px solid black;
+    border-spacing: 0;
+    background-color: #009933;
+    background-size: 20%;
+    font-size: .7em;
+    background-position: right;
+}
+
+.td2, .th2 { padding: 10px;}
+.tr2:nth-of-type(odd) {background-color: #00b33c;
+font-size: 1em;
+}
+
+.mode1 { 
+    background-size: auto;
+    height: 55px;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+
+.mode2 { 
+    background-size: auto;
+    height: 55px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}   
+    
+.td { 
+    padding: 10px;
+    font-size: .5em;
+}
+
+#mobile { display: inline; }
+    #desktop { display: none; }
+}
