@@ -71,7 +71,7 @@ h2 {
 /* creates header format */
 header {
     height: 100px;
-    background-image: url(/images/smash-ball-black.png);
+    background-image: url(/smashwebsite/images/smash-ball-black.png);
     margin-left: 1.75em;
     margin-top: 1.75em;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@ header {
 }
 
 /* background image for header */
-.smashballblack { background-image: url(/images/smash-ball-black.png);
+.smashballblack { background-image: url(/smashwebsite/images/smash-ball-black.png);
     padding-top: 15px;
     padding-left: 15px;
 }
@@ -97,7 +97,7 @@ p {
 
 /* image element in index.html */
 .banner { 
-    background-image: url(/images/banner.jpg);
+    background-image: url(/smashwebsite/images/banner.jpg);
     background-size: 100% 100%;
     width: 100%;
     height: 200px;
@@ -105,7 +105,7 @@ p {
 
 /* Creates the background image of the entire website. Any part of the page not taken up by content is displaying part of this image. */
 body {
-    background-image: url(/images/background.jpg);
+    background-image: url(/smashwebsite/images/background.jpg);
     background-size: 100%, 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -191,7 +191,7 @@ footer {
 }
 
 /* displayed image used before a website was worked on yet */
-#construction { background-image: url(/images/construction.jpg);
+#construction { background-image: url(/smashwebsite/images/construction.jpg);
     background-size: 100% 100%;
         height: 150px;
 }
@@ -395,7 +395,7 @@ iframe {
 /* new display for non-desktop devices with a minimum max width of 1024 pixels */
 @media only screen and ( max-width: 1024px ) {
     body { margin: 0;
-    background-image: url(/images/background.jpg);
+    background-image: url(/smashwebsite/images/background.jpg);
     }
     
     /* changes properties for "tablet mode" */
@@ -409,7 +409,7 @@ iframe {
     
 /* changes image width */
 .banner { 
-    background-image: url(/images/banner.jpg);
+    background-image: url(/smashwebsite/images/banner.jpg);
     background-size: 100% 100%;
     width: 100%;
     height: auto;
@@ -552,7 +552,7 @@ main {
     
 /* changes banner width */
 .banner { 
-    background-image: url(/images/banner.jpg);
+    background-image: url(/smashwebsite/images/banner.jpg);
     background-size: 100% 100%;
     width: 100%;
     height: 130px;
@@ -703,7 +703,7 @@ header { background-image: none;
     
 /* alters image size */
 .banner { 
-    background-image: url(/images/banner.jpg);
+    background-image: url(/smashwebsite/images/banner.jpg);
     background-size: 100% 100%;
     width: 100%;
     height: 70px;
