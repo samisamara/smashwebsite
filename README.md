@@ -1,0 +1,1 @@
+This is a website revolving around Nintendo's 2018 game 'Super Smash Bros Ultimate.' This website will feature several pages to show off different aspects of the game, such as fighters, or stages. There is also going to be javascript functionality added to the website as well, adding interactivity to the website.
